@@ -15,24 +15,33 @@ Email me at saurabhchopra0108@gmail.com with your user credentials to get alerts
 3. Activate virtualenv. `source .venv/bin/activate`
 4. Install dependencies. `pip install -r requirements.txt`
 5. Update User Credentials file. 
+
 ```
 [
   {
     "token": "<your www.cowin.gov.in user token>",
     "state": <your cowin unique state id>,
     "districts": [<your cowin unique district ids>],
-    "slack_member_id": "<your slack member id>",
-    "SLACK_WEBHOOK": "<your slack webhook>"
+    "slack_member_id": "<your slack member id>",  # optional
+    "SLACK_WEBHOOK": "<your slack webhook>",  # optional
+    "email": "<your email address>"  # optional
   },
   {
     "token": "<your www.cowin.gov.in user token>",
     "state": <your cowin unique state id>,
     "districts": [<your cowin unique district ids>],
-    "slack_member_id": "<your slack member id>",
-    "SLACK_WEBHOOK": "<your slack webhook>"
+    "slack_member_id": "<your slack member id>",  # optional
+    "SLACK_WEBHOOK": "<your slack webhook>",  # optional
+    "email": "your email address"  # optional
   },
 ]
 ```
+
+It can send updates on your:
+
+    a. email
+    b. slack
+
 6. Run the script. `cd /home/ubuntu/saurabh/cowin-updates/ && /home/ubuntu/saurabh/cowin-updates/.venv/bin/python /home/ubuntu/saurabh/cowin-updates/cowin_alerts.py >> /home/ubuntu/saurabh/cowin-updates/cowin_alerts_log.py`
 7. Add to crontab. 
 ```
