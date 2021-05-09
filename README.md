@@ -1,6 +1,6 @@
 # cowin-updates
 
-[BUY ME COFFEE](buymeacoffee.com/saurabhchopra)
+[BUY ME COFFEE](https://buymeacoffee.com/saurabhchopra)
 
 This project is created for getting COVID Vaccine alerts on my SLACK Channel.
 
@@ -39,6 +39,6 @@ Email me at saurabhchopra0108@gmail.com with your user credentials to get alerts
 crontab -e
 */1 * * * * cd /home/ubuntu/saurabh/cowin-updates/ && /home/ubuntu/saurabh/cowin-updates/.venv/bin/python /home/ubuntu/saurabh/cowin-updates/cowin_alerts.py >> /home/ubuntu/saurabh/cowin-updates/cowin_alerts_log.py 2>&1
 ```
-8. [BMC](buymeacoffee.com/saurabhchopra)
+8. [BMC](https://buymeacoffee.com/saurabhchopra)
 
 ### Any feedback is welcome :)
