@@ -90,7 +90,10 @@ class CoWinAlerts:
                         slack_response = requests.post(SLACK_WEBHOOK, headers=slack_headers, data=slack_payload)
 
 
-
 if __name__ == "__main__":
-    co_win_alerts_object = CoWinAlerts()
-    co_win_alerts_object.execute()
+    while True:
+        try:
+            co_win_alerts_object = CoWinAlerts()
+            co_win_alerts_object.execute()
+        except Exception as err:
+            print("ERROR: ", err)
